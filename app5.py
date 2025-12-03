@@ -30,16 +30,17 @@ st.markdown(
 # ------------------------------------------------------------
 # 10mメッシュコード確認用 Webマップ（外部サイト）
 # ------------------------------------------------------------
-with st.expander("📍 10mメッシュコード確認用 Webマップ（沼津高専 佐藤先生のページ・外部サイト）", expanded=True):
+with st.expander("📍 10mメッシュ・地点確認用 Webマップ（ArcGIS Online・外部サイト）", expanded=True):
     components.iframe(
-        "https://user.numazu-ct.ac.jp/~tsato/webmap/sphere/mesh/",
+        "https://www.arcgis.com/apps/instant/lookup/index.html?appid=ec8abf80f76c4417b01561e303ed2d32",
         height=600,
         width=1200,
     )
     st.markdown(
-        '[🔗 別タブで開く](https://user.numazu-ct.ac.jp/~tsato/webmap/sphere/mesh/)',
+        '[🔗 別タブで開く（ArcGIS マップ）](https://www.arcgis.com/apps/instant/lookup/index.html?appid=ec8abf80f76c4417b01561e303ed2d32)',
         unsafe_allow_html=True
     )
+
 
 # ============================================================
 # 気象要素の選択肢（気温のみ）
@@ -385,3 +386,4 @@ if st.button("🌏 マップ作成"):
 
 else:
     st.info("エリア・日付などを指定してから「🌏 マップ作成」を押してください。")
+
