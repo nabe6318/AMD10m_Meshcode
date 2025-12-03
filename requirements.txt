@@ -1,0 +1,28 @@
+# --- Streamlit 本体 ---
+streamlit
+streamlit-folium>=0.12.0
+folium
+
+# --- 基本データ処理 ---
+pandas
+numpy
+matplotlib
+xarray
+netCDF4
+
+# --- OSM重ね合わせ・可視化 ---
+branca>=0.7.0
+
+# --- XML解析・時系列処理 ---
+lxml>=4.9.0
+python-dateutil>=2.8.2
+
+# --- GeoPackage（GPKG）対応（Windows で安定するバージョン固定） ---
+geopandas==0.14.3
+shapely==2.0.3
+fiona==1.9.5
+pyproj==3.6.1
+rtree==1.1.0
+
+# --- （任意）AMD Tools ---
+#AMD_Tools4
